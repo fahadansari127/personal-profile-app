@@ -1,1 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
+body { margin: 0; font-family: system-ui, sans-serif; }
+
+:root {
+  --bg: #f5f6fa; --card: #ffffff; --text: #1d1f27;
+  --chip-bg: #e0e7ff; --chip-fg: #3730a3;
+}

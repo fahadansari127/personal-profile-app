@@ -1,0 +1,18 @@
+.card {
+    padding: 1.5rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgb(0 0 0 / 0.12);
+    margin-top: 1rem;
+}
+
+/* .role {
+    opacity: 0.7;
+} */
+
+/* .skills {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0;
+} */

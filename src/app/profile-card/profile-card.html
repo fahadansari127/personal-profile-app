@@ -1,0 +1,30 @@
+<article class="card">
+
+    @if (editing()){
+    <input #name [value]="profile().name" aria-label="Name">
+    <input #role [value]="profile().role" aria-label="Role">
+    <div>
+        <button (click)="save(name.value, role.value)">Save</button>
+        <button (click)="editing.set(false)">Cancel</button>
+    </div>
+    }
+    @else {
+        <h2>{{ profile().name }}</h2>
+        <p>{{ profile().role }}</p>
+        <button (click)="editing.set(true)">Edit</button>
+    }
+
+    <ul>
+        @for (skill of skills(); track skill) {
+        <li>
+            <app-skill-chip [label]="skill" />
+        </li>
+        }
+        @empty {
+        <li>No Skills Yet</li>
+        }
+    </ul>
+
+    <input #skillInput placeholder="Add a skill and press Enter" (keydown.enter)="addSkill(skillInput)"/>
+
+</article>
