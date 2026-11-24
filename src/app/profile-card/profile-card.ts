@@ -15,7 +15,7 @@ export class ProfileCard {
 
   readonly profileChange = output<Profile>();
   readonly skillAdded = output<string>();
-  // readonly skillRemoved = output<string>();
+  readonly skillRemoved = output<string>();
 
   protected readonly editing = signal(false);
 

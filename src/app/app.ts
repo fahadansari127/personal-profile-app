@@ -22,5 +22,9 @@ export class App {
       this.skills.update((list) => [...list, skill]);
     }
   }
+
+  removeSkill(skill:string){
+    this.skills.update((list) => list.filter((s) => s !== skill));
+  }
    
 }

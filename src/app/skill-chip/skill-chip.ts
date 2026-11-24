@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, output } from '@angular/core';
 
 @Component({
   imports: [],
@@ -9,4 +9,5 @@ import { Component, input } from '@angular/core';
 export class SkillChip {
 
   readonly label = input.required<string>();
+  readonly removed = output<void>();
 }

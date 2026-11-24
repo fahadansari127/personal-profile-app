@@ -17,7 +17,7 @@
     <ul>
         @for (skill of skills(); track skill) {
         <li>
-            <app-skill-chip [label]="skill" />
+            <app-skill-chip [label]="skill" (removed)="skillRemoved.emit(skill)" />
         </li>
         }
         @empty {
